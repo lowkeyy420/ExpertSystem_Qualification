@@ -4,6 +4,12 @@
     (slot rating)    
 )
 
+(deftemplate my-video
+	(slot name)
+    (slot type)
+    (slot rating)    
+)
+
 (deftemplate recommended-video
 	(slot name)
     (slot type)
@@ -61,13 +67,15 @@
 )
 
 
-/*(printout t "input rating (low / high )>> ")
+
+(printout t "Input budget [ 'low' | 'high' ] (case sensitive)>>")
 (bind ?rating (readline))
 (printout t "input type ( Premium / Exclusive )>> ")
 (bind ?type (readline))
 (assert (start-recommendation ?rating ?type))
+
 (run)
-(facts)*/
+(facts)
 
 (defquery get-recommended-video
     (recommended-video (name ?name) (type ?type)  (rating ?rating))
@@ -78,3 +86,4 @@
 )
 
 
+(new app.QueryVideos)

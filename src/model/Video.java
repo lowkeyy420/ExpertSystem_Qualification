@@ -4,7 +4,7 @@ public class Video {
 	private String name;
 	private String type;
 	private Float rating;
-	
+	//Before clp only
 	
 	public Video() {
 	}

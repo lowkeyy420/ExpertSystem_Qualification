@@ -11,6 +11,8 @@ import model.Video;
 
 public class Database {
 
+	//Before clp only
+	
 	private Vector<Video> videos;
 
 	private static Database instance;
